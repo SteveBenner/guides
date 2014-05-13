@@ -318,6 +318,10 @@ Objective-C
 * Use `NSAssert` in methods that require the presence of certain arguments.
 * Write methods using the happy path. Indent the exceptional cases. Keep the
   optimal case in the left-most column.
+* Prefer `enumerateObjectsUsingBlock:` when looping through arrays.
+* Always use braces with control and loop blocks unless it can easily fit on
+  one line.
+* Place opening brace for control and loop blocks on same line.
 
 Python
 ------
