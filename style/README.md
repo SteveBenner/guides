@@ -322,6 +322,8 @@ Objective-C
 * Always use braces with control and loop blocks unless it can easily fit on
   one line.
 * Place opening brace for control and loop blocks on same line.
+* Prefer `NSInteger`, `CGFloat`, and similar macros over `int`, `float`, and
+  other base types.
 
 Python
 ------
