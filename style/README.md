@@ -291,13 +291,16 @@ Objective-C
 
 [Sample](samples/ObjectiveC.m)
 
-* `#import` linked frameworks in the prefix header (`ProjectName-Prefix.pch`).
-* Keep `.xib` files grouped with their associated view class.
+* Setup new projects using liftoff.
+* Use liftoff generated directory structure to organize files.
+* Place `#import`s into the prefix header (`ProjectName-Prefix.pch`) only if
+  used in _many_ files.
+* Place `.xib` files under Resources/Nibs and their associated view files in
+  Classes/Views.
 * Order `#import` statements alphabetically.
 * Order `@class` directives alphabetically.
 * Order `@property` modifiers: memory management, atomicity, writability.
-* Organize classes into `models`, `views`, `controllers`, `categories`,
-  and `services` directories.
+* Leave out `@property` modifiers unless needed.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.
