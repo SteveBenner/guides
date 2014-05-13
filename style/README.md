@@ -291,8 +291,7 @@ Objective-C
 
 [Sample](samples/ObjectiveC.m)
 
-* Setup new projects using liftoff.
-* Use liftoff generated directory structure to organize files.
+* Setup new projects using liftoff and follow provided directoy structure.
 * Place `#import`s into the prefix header (`ProjectName-Prefix.pch`) only if
   used in _many_ files.
 * Place `.xib` files under `Resources/Nibs` and their associated view files in
@@ -300,7 +299,9 @@ Objective-C
 * Order `#import` statements alphabetically.
 * Order `@class` directives alphabetically.
 * Order `@property` modifiers: memory management, atomicity, writability.
-* Leave out `@property` modifiers unless needed.
+* Leave out `@property` modifiers unless needed, `nonatomic` is the only one
+  needed in most cases except connecting views with IB in which case `weak` may
+  also be needed.
 * Prefer `@class` to `#import` when referring to external classes in a public
   `@interface`.
 * Prefer `@property` to declaring instance variables.
