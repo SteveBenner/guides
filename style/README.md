@@ -324,6 +324,7 @@ Objective-C
 * Place opening brace for control and loop blocks on same line.
 * Prefer `NSInteger`, `CGFloat`, and similar macros over `int`, `float`, and
   other base types.
+* Prefer AutoLayout for view layouts.
 
 Python
 ------
