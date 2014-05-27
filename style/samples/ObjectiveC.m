@@ -59,7 +59,9 @@ static NSString *const kFirstName = @"FirstName";
 
     // Newlines before and after conditional blocks
     // Use enumerate to loop through arrays
-    [deckOfCards enumerateObjectsUsingBlock:^(Card *card, NSUInteger idx, BOOL *stop) {
+    // Use explicit class in block parameters
+    // Use full word 'index'
+    [deckOfCards enumerateObjectsUsingBlock:^(Card *card, NSUInteger index, BOOL *stop) {
         NSLog(@"%@", [card description]);
     }];
 
